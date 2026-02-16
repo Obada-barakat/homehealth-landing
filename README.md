@@ -8,7 +8,7 @@ Designed and developed a professional web presence for HomeHealth+, a premium ho
 
 ## 🚀 Live Demo
 
-[View Live Site](https://obada-barakat.github.io/homehealth-landing)
+[View Live Site](https://obada-barakat.github.io/homehealth-landing/)
 
 ## 💼 Client Requirements
 
