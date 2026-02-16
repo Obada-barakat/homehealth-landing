@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home PCR Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+        <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Optional: Offset for fixed navbar (if you make it sticky later) */
+        section {
+            scroll-margin-top: 70px;
+        }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white sticky top-0 z-50 shadow-lg">
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="text-2xl font-bold">HomeHealth+</div>
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#home" class="hover:text-blue-200">Home</a></li>
+          <li><a href="#services" class="hover:text-blue-200">Services</a></li>
+          <li><a href="#why_us" class="hover:text-blue-200">About Us</a></li>
+          <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+        <div class="flex items-center space-x-4">
+          <span class="hidden lg:inline text-sm">📞 +971 (04) 99 44 55</span>
+          <button
+            class="bg-green-500 px-4 py-2 rounded hover:bg-green-600 transition cursor-pointer"
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-gradient-to-br from-blue-500 to-blue-700 text-white relative overflow-hidden"
+    >
+      <div
+        class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center"
+      >
+        <!-- left content -->
+        <div class="space-y-6 relative">
+          <img
+            src="/assets/hero.webp"
+            alt="PCR Test"
+            class="hidden md:inline absolute left-[50%] top-[50%] -translate-[50%] w-100 h-100 object-contain z-0"
+          />
+          <img
+            src="/assets/stethoscope.webp"
+            alt="stethoscope"
+            class="absolute right-0 -top-10 -md:top-18 w-36 h-36 z-0"
+          />
+
+          <div
+            class="relative z-10 bg-black/30 backdrop-blur-xs rounded-lg shadow-2xl p-6 text-white"
+          >
+            <h1 class="text-2xl md:text-4xl font-bold leading-tight">
+              Book Home Medical Testing & Healthcare Services
+            </h1>
+          </div>
+        </div>
+
+        <!-- right content(booking form) -->
+        <div class="bg-white rounded-lg shadow-2xl p-6 text-gray-800">
+          <h3 class="text-2xl font-bold mb-4 text-blue-600">
+            Book Home Health Test
+          </h3>
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              ;
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <select
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+                    <option class="bg-gray-200">Select Service</option>
+                    <option>Complete Blood Count</option>
+                    <option>Diabetes Screening</option>
+                    <option>Vitamin D Test</option>
+                    <option>Cholesterol Profile</option>
+                    <option>PCR Test</option>
+                    <option>Health Checkup Package</option>
+            </select>
+            <button
+              type="submit"
+              class="w-full bg-green-500 text-white py-3 rounded font-semibold hover:bg-green-600 transition cursor-pointer"
+            >
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!--Decorative Wave-->
+      <div class="absolute -bottom-1 -md:bottom-0 left-0 right-0">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 120L1440 120L1440 0C1440 0 1080 80 720 80C360 80 0 0 0 0L0 120Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!--Features section-->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="text-center space-y-4">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-md text-3xl text-blue-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Certified Professionals</h3>
+                <p class="text-gray-600">
+                    Our team consists of licensed nurses and phlebotomists with years of experience 
+                    in home healthcare services.
+                </p>
+            </div>
+
+                 <!-- Feature 2 -->
+            <div class="text-center space-y-4">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-flask text-3xl text-green-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Accurate Lab Results</h3>
+                <p class="text-gray-600">
+                    All tests processed in DHA-approved laboratories with international quality 
+                    standards and certifications.
+                </p>
+            </div>
+
+           <!-- Feature 3 -->
+            <div class="text-center space-y-4">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-clock text-3xl text-purple-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Quick Turnaround</h3>
+                <p class="text-gray-600">
+                    Receive your test results within 24-48 hours via email and SMS with detailed 
+                    explanations.
+                </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choosee us section -->
+    <section class="py-16 bg-gray-50" id="why_us">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+          <!-- left content -->
+          <div class="flex justify-center">
+            <img
+              src="assets/why_us.webp"
+              alt="why us image"
+              class="w-full max-w-md h-auto"
+            />
+          </div>
+
+          <!-- right content -->
+          <div class="space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+              Why Choose Our Home Healthcare Services?
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed">
+              We bring laboratory-quality medical testing directly to your home, making healthcare 
+                    more accessible, convenient, and comfortable for you and your family.
+            </p>
+
+            <!-- feature List -->
+            <div class="space-y-4">
+              <!-- Feature Item 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-vial text-green-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Complete Blood Work</h4>
+                            <p class="text-gray-600 text-sm">
+                                CBC, lipid profile, liver function, kidney function, and comprehensive 
+                                metabolic panels available.
+                            </p>
+                        </div>
+                    </div>
+
+              <!-- Feature Item 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-blue-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Health Screening Packages</h4>
+                            <p class="text-gray-600 text-sm">
+                                Comprehensive health checkups tailored for different age groups and 
+                                health concerns.
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- Feature Item 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-syringe text-purple-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Vaccinations at Home</h4>
+                            <p class="text-gray-600 text-sm">
+                                Flu shots, travel vaccines, and routine immunizations administered by 
+                                certified healthcare professionals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition cursor-pointer">
+                    View All Services
+                </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white" id="benefits">
+      <div class="container mx-auto px-4">
+          
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Benefits of Home Healthcare Services
+              </h2>
+              <p class="text-gray-600 leading-relaxed">
+                Experience healthcare on your terms. Our home services combine medical excellence 
+                with the comfort and convenience of your own space.
+              </p>
+            </div>
+
+            <!-- Benefits List -->
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+              <!-- Benefit 1 - Convenience -->
+              <div
+                class="text-center space-y-4 p-6 rounded-lg hover:shadow-lg transition"
+              >
+                <div class="flex justify-center">
+                  <div
+                    class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-couch text-3xl text-blue-600"></i>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">
+                  Home Comfort
+                </h3>
+                <p class="text-gray-600">
+                    No clinic visits required. Get tested in your pajamas while enjoying your morning 
+                    coffee in familiar surroundings.
+                </p>
+              </div>
+
+                <!-- Benefit 2 - Time Saving -->
+            <div class="text-center space-y-4 p-6 rounded-lg shadow-lg transition">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-business-time text-3xl text-green-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Save Valuable Time</h3>
+                <p class="text-gray-600">
+                    Eliminate travel time, parking hassles, and waiting rooms. Schedule appointments 
+                    that fit your busy lifestyle.
+                </p>
+            </div>
+
+              <!-- Benefit 3 - Family Friendly -->
+            <div class="text-center space-y-4 p-6 rounded-lg hover:shadow-lg transition">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-3xl text-yellow-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Family-Friendly</h3>
+                <p class="text-gray-600">
+                    Perfect for families, elderly patients, and those with mobility challenges. 
+                    Multiple family members can be tested in one visit.
+                </p>
+            </div>
+
+            </div>
+             <div class="grid md:grid-cols-3 gap-8 mt-8">
+            
+            <!-- Benefit 4 - Privacy -->
+            <div class="text-center space-y-4 p-6 rounded-lg shadow-lg transition">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-shield text-3xl text-purple-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Privacy & Discretion</h3>
+                <p class="text-gray-600">
+                    Maintain complete privacy for sensitive tests. All information is kept strictly 
+                    confidential per HIPAA standards.
+                </p>
+            </div>
+
+            <!-- Benefit 5 - Flexible Scheduling -->
+            <div class="text-center space-y-4 p-6 rounded-lg hover:shadow-lg transition">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-calendar-alt text-3xl text-red-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Flexible Scheduling</h3>
+                <p class="text-gray-600">
+                    Early morning, evening, or weekend slots available. Book appointments 7 days a week 
+                    at your preferred time.
+                </p>
+            </div>
+
+            <!-- Benefit 6 - Safety -->
+            <div class="text-center space-y-4 p-6 rounded-lg shadow-lg transition">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shield-virus text-3xl text-orange-600"></i>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800">Enhanced Safety</h3>
+                <p class="text-gray-600">
+                    Reduce exposure to illnesses in crowded clinics. All equipment is sterile and 
+                    safety protocols strictly followed.
+                </p>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-gray-800 text-white" id="testimonials">
+      <div class="container mx-auto px-4">
+        <!--Section Header-->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Don't take our word for it!
+          </h2>
+          <p class="text-gray-300">
+            Here's what our satisfied customers are saying about us
+          </p>
+        </div>
+
+        <!-- Testimonial Card-->
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="bg-gradient-to-r from-blue-600 to-teal-500 rounded-lg p-8 md:p-12 relative"
+          >
+            <!-- Quote Icon -->
+            <div class="absolute top-6 right-6 text-white/20">
+              <i class="fas fa-quote-left text-5xl"></i>
+            </div>
+
+            <!-- content grid-->
+            <div class="grid md:grid-cols-3 gap-8 items-center relative z-10">
+               <!-- Left Side - Icons/Features -->
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-star text-2xl"></i>
+                            </div>
+                            <span class="font-semibold">5-Star Rated</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-award text-2xl"></i>
+                            </div>
+                            <span class="font-semibold">ISO Certified</span>
+                        </div>
+                    </div>
+
+                <!-- Middle - Testimonial Text -->
+                    <div class="md:col-span-2 space-y-4">
+                        <p class="text-lg leading-relaxed italic">
+                            "I've been using HomeHealth+ for my family's annual health checkups for the past 
+                            two years. The convenience of having a professional nurse come to our home is 
+                            incredible, especially with young children. The results are always accurate and 
+                            delivered on time. Highly professional service!"
+                        </p>
+                        
+                        <!-- Customer Info -->
+                        <div class="flex items-center space-x-4 pt-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Amieli Doe</h4>
+                                <p class="text-sm text-gray-200">London</p>
+                            </div>
+                        </div>
+
+                        <!-- Star Rating -->
+                        <div class="flex space-x-1 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Decorative Element -->
+            <div class="absolute bottom-6 right-6 text-white/10">
+              <i class="fas fa-quote-right text-5xl"></i>
+            </div>
+          </div>
+
+         <!-- Multiple Testimonials (Optional Carousel Style) -->
+        <div class="grid md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+            
+            <!-- Mini Testimonial 1 -->
+            <div class="bg-gray-700 rounded-lg p-6 space-y-4">
+                <div class="flex space-x-1 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    "Perfect for elderly parents! The nurse was patient and caring. My father has 
+                    diabetes and getting regular blood tests at home has been a game-changer."
+                </p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-sm"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm">Michael Brown</p>
+                        <p class="text-xs text-gray-400">Manchester</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Mini Testimonial 2 -->
+            <div class="bg-gray-700 rounded-lg p-6 space-y-4">
+                <div class="flex space-x-1 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    "As a busy professional, this service saves me so much time. Booked a vitamin D test 
+                    online, nurse came next day, results in 24 hours. Excellent!"
+                </p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-sm"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm">Sarah Johnson</p>
+                        <p class="text-xs text-gray-400">Liverpool</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini Testimonial 3 -->
+            <div class="bg-gray-700 rounded-lg p-6 space-y-4">
+                <div class="flex space-x-1 text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm">
+                    "Got my pre-employment medical done at home. Very professional, competitive pricing, 
+                    and the report was accepted by my company without issues."
+                </p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-sm"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm">Alex Smith</p>
+                        <p class="text-xs text-gray-400">Bermingham</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--services Section-->
+    <section class="py-16 bg-white" id="services">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                  <!-- left Content - Image -->
+                <div class="flex justify-center relative">
+                <!-- Map Container -->
+                <div class="relative w-full max-w-lg">
+                    <img 
+                        src="assets/services.webp" 
+                        alt="Travel Map" 
+                        class="w-full h-auto"
+                    >
+                    
+                    <!-- Location Pins (Decorative - Optional) -->
+                    <div class="absolute top-1/5 left-2/4 animate-bounce">
+                        <i class="fas fa-microscope text-red-500 text-3xl drop-shadow-lg"></i>
+                    </div>
+                    <div class="absolute top-1/3 right-1/4 animate-bounce" style="animation-delay: 0.2s;">
+                        <i class="fas fa-stethoscope text-yellow-500 text-3xl drop-shadow-lg"></i>
+                    </div>
+                    <div class="absolute bottom-1/2 left-1/2 animate-bounce" style="animation-delay: 0.4s;">
+                        <i class="fas fa-heartbeat text-blue-500 text-3xl drop-shadow-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+                <!-- right Content-->
+                    <div class="space-y-6">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                            Our Most Popular Health Tests
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            From routine blood work to comprehensive health screenings, we offer a wide range 
+                    of medical tests performed by certified professionals in the comfort of your home.
+                        </p>
+
+                  <!-- Services List with Icons -->
+                <div class="space-y-3">
+                    <h3 class="font-semibold text-gray-800 mb-4">Available Tests & Services:</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <!-- Service Item 1 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-vial text-blue-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Complete Blood Count</span>
+                        </div>
+
+                        <!-- Service Item 2 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-heartbeat text-red-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Lipid Profile</span>
+                        </div>
+
+                        <!-- Service Item 3 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-sun text-yellow-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Vitamin D Test</span>
+                        </div>
+
+                        <!-- Service Item 4 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tint text-purple-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Diabetes Screening</span>
+                        </div>
+
+                        <!-- Service Item 5 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-kidneys text-green-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Kidney Function Test</span>
+                        </div>
+
+                        <!-- Service Item 6 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-liver text-orange-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Liver Function Test</span>
+                        </div>
+
+                        <!-- Service Item 7 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-venus text-pink-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Thyroid Profile</span>
+                        </div>
+
+                        <!-- Service Item 8 -->
+                        <div class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg hover:bg-blue-50 transition">
+                            <div class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-virus text-teal-600 text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">PCR & Antigen Tests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Features -->
+                <div class="space-y-3 pt-4 border-t border-gray-200">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-clipboard-check text-blue-500 text-xl"></i>
+                        <span class="text-gray-700">Pre-employment medical checkups</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-syringe text-blue-500 text-xl"></i>
+                        <span class="text-gray-700">Vaccination services at home</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-file-medical text-blue-500 text-xl"></i>
+                        <span class="text-gray-700">Custom health packages available</span>
+                    </div>
+                </div>
+
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition cursor-pointer">
+                    View All Services & Pricing
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Footer Section -->
+<section id="footer" class="bg-gray-900 text-white pt-16">
+    <div class="container mx-auto px-4 pb-8">
+        
+        <div class="grid md:grid-cols-4 gap-8">
+            
+            <!-- Column 1 - About -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold mb-4">HomeHealth+</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Your trusted partner in home healthcare. We bring professional medical testing 
+                    and healthcare services directly to your doorstep.
+                </p>
+                
+                <!-- Certifications -->
+                <div class="space-y-2 pt-4">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-certificate text-blue-500"></i>
+                        <span class="text-gray-400 text-sm">DHA Approved</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-award text-blue-500"></i>
+                        <span class="text-gray-400 text-sm">ISO 9001 Certified</span>
+                    </div>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2 - Quick Links -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#home" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Our Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#why_us" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Why Choose Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3 - Our Services -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Blood Tests at Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Health Checkup Packages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Diabetes Screening</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Vitamin Tests</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>PCR & COVID Testing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Home Vaccinations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition flex items-center space-x-2">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                            <span>Corporate Healthcare</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4 - Contact Info -->
+            <div class="space-y-4" id="contact">
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-map-marker-alt text-blue-500 mt-1"></i>
+                        <span class="text-gray-400 text-sm">
+                            Dubai Healthcare City<br>Dubai, United Arab Emirates
+                        </span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-phone text-blue-500 mt-1"></i>
+                        <a href="tel:+97149944 55" class="text-gray-400 text-sm hover:text-white transition">
+                            +971 (04) 99 44 55
+                        </a>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-envelope text-blue-500 mt-1"></i>
+                        <a href="mailto:info@homehealth.ae" class="text-gray-400 text-sm hover:text-white transition">
+                            info@homehealth.ae
+                        </a>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fab fa-whatsapp text-blue-500 mt-1"></i>
+                        <a href="https://wa.me/97149944455" class="text-gray-400 text-sm hover:text-white transition">
+                            WhatsApp Support
+                        </a>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-clock text-blue-500 mt-1"></i>
+                        <span class="text-gray-400 text-sm">
+                            Available 7 Days a Week<br>
+                            <span class="text-green-400">7:00 AM - 10:00 PM</span>
+                        </span>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <button class="mt-4 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition w-full cursor-pointer">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Book Appointment
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 mt-12 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                
+                <!-- Copyright -->
+                <p class="text-gray-400 text-sm">
+                    © 2026 HomeHealth+. All rights reserved.
+                </p>
+
+                <!-- Payment Methods -->
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-400 text-sm">We Accept:</span>
+                    <i class="fab fa-cc-visa text-3xl text-gray-400 hover:text-white transition"></i>
+                    <i class="fab fa-cc-mastercard text-3xl text-gray-400 hover:text-white transition"></i>
+                    <i class="fab fa-cc-paypal text-3xl text-gray-400 hover:text-white transition"></i>
+                    <i class="fab fa-cc-amex text-3xl text-gray-400 hover:text-white transition"></i>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">
+                        Terms & Conditions
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">
+                        FAQs
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="relative py-2 w-full text-center bg-gray-800">Made with ❤️ by Ubba</div>
+</section>
+
+  </body>
+</html>
